@@ -7,7 +7,7 @@ import gsap from 'gsap';
 
 function createPallet(color) {
   const pallet = new Group();
-  const material = new LineBasicMaterial({ color, transparent: true, opacity: 0.7 });
+  const material = new LineBasicMaterial({ color, transparent: true, opacity: 0.5 });
 
   function addPlank(w, h, d, x, y, z) {
     const geo = new BoxGeometry(w, h, d);
@@ -49,10 +49,10 @@ export function initPalletScene(canvas, options = {}) {
   renderer.setSize(canvas.clientWidth, canvas.clientHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-  const pallet = createPallet(0xD4A039);
+  const pallet = createPallet(0xB8860B);
   if (ambient) {
     pallet.children.forEach((child) => {
-      child.material.opacity = 0.15;
+      child.material.opacity = 0.08;
     });
     camera.position.set(0, 3, 8);
   }

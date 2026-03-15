@@ -50,7 +50,9 @@ initPreloader(sceneReady).then(() => {
 
   gsap.to('[data-hero-subtitle]', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out', delay: 0.6 });
   gsap.to('[data-hero-cta]', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out', delay: 0.7 });
-  gsap.to('[data-hero-badges]', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out', delay: 0.8 });
-
   initMarquee(store.lenis);
+
+  import('@modules/productScenes').then(({ initProductScenes }) => {
+    initProductScenes();
+  }).catch(() => {});
 });
