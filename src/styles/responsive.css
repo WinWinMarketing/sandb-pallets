@@ -1,0 +1,243 @@
+/* ========================================
+   1024px
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-values__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .products-detail__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__nav {
+    gap: var(--space-md);
+  }
+}
+
+/* ========================================
+   768px
+   ======================================== */
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-toggle {
+    display: flex;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .engagement-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__title {
+    font-size: var(--text-3xl);
+  }
+
+  .certifications__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-certs__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-listing__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-detail__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .engagement__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-timeline__track {
+    padding-left: 2rem;
+  }
+
+  .about-timeline__item::before {
+    left: calc(-2rem - 5px);
+  }
+
+  .form-group--row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   480px
+   ======================================== */
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__badges {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ========================================
+   Touch devices
+   ======================================== */
+
+@media (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+
+  .ambient-glow {
+    display: none;
+  }
+
+  html {
+    cursor: auto !important;
+  }
+
+  html * {
+    cursor: auto !important;
+  }
+}
+
+/* ========================================
+   Reduced motion
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .preloader {
+    display: none !important;
+  }
+
+  .cursor {
+    display: none !important;
+  }
+
+  .noise-overlay {
+    display: none !important;
+  }
+
+  .ambient-glow {
+    display: none !important;
+  }
+
+  .js [data-split] {
+    visibility: visible;
+  }
+
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ========================================
+   View Transitions API
+   ======================================== */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: 0.3s ease-in both fade-slide-out;
+}
+
+::view-transition-new(root) {
+  animation: 0.3s ease-out both fade-slide-in;
+}
+
+@keyframes fade-slide-out {
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

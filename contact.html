@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — S&B Pallets</title>
+  <meta name="description" content="Contact S&B Pallets for custom pallet quotes, pricing, and inquiries. Reach our team by phone, email, or fill out our quick quote form." />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__ball"></div>
+  </div>
+
+  <!-- Ambient Glow -->
+  <div class="ambient-glow" id="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Page Transition -->
+  <div class="page-transition" id="page-transition" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header" data-scroll-header>
+    <div class="header__inner container">
+      <a href="/" class="header__logo" data-magnetic>
+        <span class="header__logo-text">S&B</span><span class="header__logo-dot">.</span>
+      </a>
+      <nav class="header__nav" id="nav" aria-label="Primary">
+        <ul class="header__nav-list">
+          <li><a href="/" class="header__nav-link" data-magnetic><span class="header__nav-num">00</span> Home</a></li>
+          <li><a href="/about.html" class="header__nav-link" data-magnetic><span class="header__nav-num">01</span> About</a></li>
+          <li><a href="/products.html" class="header__nav-link" data-magnetic><span class="header__nav-num">02</span> Products</a></li>
+          <li><a href="/blog.html" class="header__nav-link" data-magnetic><span class="header__nav-num">03</span> Blog</a></li>
+        </ul>
+      </nav>
+      <a href="/contact.html" class="header__cta btn btn--primary btn--active" data-magnetic>
+        <span class="btn__text">Get a Quote</span>
+        <span class="btn__arrow">&rarr;</span>
+      </a>
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="header__menu-bar"></span>
+        <span class="header__menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <nav class="mobile-menu__nav" aria-label="Mobile">
+        <ul class="mobile-menu__list">
+          <li><a href="/" class="mobile-menu__link"><span class="mobile-menu__num">00</span> Home</a></li>
+          <li><a href="/about.html" class="mobile-menu__link"><span class="mobile-menu__num">01</span> About</a></li>
+          <li><a href="/products.html" class="mobile-menu__link"><span class="mobile-menu__num">02</span> Products</a></li>
+          <li><a href="/blog.html" class="mobile-menu__link"><span class="mobile-menu__num">03</span> Blog</a></li>
+          <li><a href="/contact.html" class="mobile-menu__link active"><span class="mobile-menu__num">04</span> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__footer">
+        <a href="tel:18004451538" class="mobile-menu__phone">1-800-445-1538</a>
+        <a href="mailto:info@sandb.ca" class="mobile-menu__email">info@sandb.ca</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__inner container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current" aria-current="page">Contact</span></li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title">Contact</h1>
+        <p class="page-hero__subtitle">Let's build your next pallet</p>
+      </div>
+    </section>
+
+    <!-- 3D Pallet Canvas -->
+    <canvas class="contact__canvas" id="pallet-canvas-contact" role="img" aria-label="3D wireframe pallet"></canvas>
+
+    <!-- Contact Grid -->
+    <section class="contact section" id="contact">
+      <div class="contact__inner container">
+        <div class="contact__grid">
+
+          <!-- Left Column: Info -->
+          <div class="contact__info">
+            <div class="contact__info-block">
+              <h2 class="contact__info-heading">Headquarters</h2>
+              <p class="contact__info-text">1300 Ellesmere Road<br>Scarborough, ON., M1P 2X9<br>Canada</p>
+            </div>
+            <div class="contact__info-block">
+              <h2 class="contact__info-heading">Phone</h2>
+              <p class="contact__info-text">
+                <a href="tel:18004451538">1-800-445-1538</a><br>
+                <a href="tel:4166150959">(416) 615-0959</a>
+              </p>
+            </div>
+            <div class="contact__info-block">
+              <h2 class="contact__info-heading">Email</h2>
+              <p class="contact__info-text">
+                <a href="mailto:info@sandb.ca">info@sandb.ca</a><br>
+                <a href="mailto:pallets@sandb.ca">pallets@sandb.ca</a>
+              </p>
+            </div>
+            <div class="contact__info-block">
+              <h2 class="contact__info-heading">Fax</h2>
+              <p class="contact__info-text">(416) 615-1795</p>
+            </div>
+            <p class="contact__note">We answer 24/7</p>
+          </div>
+
+          <!-- Right Column: Quote Form -->
+          <div class="contact__form-wrap">
+            <form id="quote-form" class="quote-form" data-form novalidate>
+
+              <div class="form-group" data-form-group>
+                <input type="text" id="first-name" name="first-name" class="form-input" placeholder=" " required autocomplete="given-name" aria-describedby="first-name-error" />
+                <label for="first-name" class="form-label">First Name</label>
+                <span class="form-line"></span>
+                <span id="first-name-error" class="form-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="text" id="last-name" name="last-name" class="form-input" placeholder=" " required autocomplete="family-name" aria-describedby="last-name-error" />
+                <label for="last-name" class="form-label">Last Name</label>
+                <span class="form-line"></span>
+                <span id="last-name-error" class="form-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="text" id="company" name="company" class="form-input" placeholder=" " autocomplete="organization" />
+                <label for="company" class="form-label">Company</label>
+                <span class="form-line"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="email" id="email" name="email" class="form-input" placeholder=" " required autocomplete="email" aria-describedby="email-error" />
+                <label for="email" class="form-label">Email</label>
+                <span class="form-line"></span>
+                <span id="email-error" class="form-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder=" " autocomplete="tel" />
+                <label for="phone" class="form-label">Phone</label>
+                <span class="form-line"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <select id="type" name="type" class="form-input" required aria-describedby="type-error">
+                  <option value="" disabled selected></option>
+                  <option value="Pallets">Pallets</option>
+                  <option value="Skids">Skids</option>
+                  <option value="Frames">Frames</option>
+                  <option value="Crates">Crates</option>
+                  <option value="Others">Others</option>
+                </select>
+                <label for="type" class="form-label">Type</label>
+                <span class="form-line"></span>
+                <span id="type-error" class="form-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <select id="quantity" name="quantity" class="form-input">
+                  <option value="" disabled selected></option>
+                  <option value="1-25">1-25</option>
+                  <option value="26-100">26-100</option>
+                  <option value="100+">100+</option>
+                </select>
+                <label for="quantity" class="form-label">Quantity</label>
+                <span class="form-line"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="text" id="top-deckboard-size" name="top-deckboard-size" class="form-input" placeholder=" " />
+                <label for="top-deckboard-size" class="form-label">Top Deckboard Size</label>
+                <span class="form-line"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="number" id="top-deckboard-pieces" name="top-deckboard-pieces" class="form-input" placeholder=" " />
+                <label for="top-deckboard-pieces" class="form-label">Top Deckboard Pieces</label>
+                <span class="form-line"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="text" id="runner-stringer-size" name="runner-stringer-size" class="form-input" placeholder=" " />
+                <label for="runner-stringer-size" class="form-label">Runner/Stringer Size</label>
+                <span class="form-line"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="number" id="runner-stringer-pieces" name="runner-stringer-pieces" class="form-input" placeholder=" " />
+                <label for="runner-stringer-pieces" class="form-label">Runner/Stringer Pieces</label>
+                <span class="form-line"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="text" id="bottom-deckboard-size" name="bottom-deckboard-size" class="form-input" placeholder=" " />
+                <label for="bottom-deckboard-size" class="form-label">Bottom Deckboard Size</label>
+                <span class="form-line"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <input type="number" id="bottom-deckboard-pieces" name="bottom-deckboard-pieces" class="form-input" placeholder=" " />
+                <label for="bottom-deckboard-pieces" class="form-label">Bottom Deckboard Pieces</label>
+                <span class="form-line"></span>
+              </div>
+
+              <div class="form-group" data-form-group>
+                <textarea id="comments" name="comments" class="form-input" placeholder=" " rows="4"></textarea>
+                <label for="comments" class="form-label">Comments</label>
+                <span class="form-line"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg form-submit" data-magnetic>
+                <span class="btn__text">Send Quote Request</span>
+                <span class="btn__arrow">&rarr;</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement Cards -->
+    <section class="engagement section">
+      <div class="engagement__inner container">
+        <div class="engagement__grid">
+
+          <div class="engagement__card">
+            <h3 class="engagement__card-title">Request a Quote</h3>
+            <p class="engagement__card-text">Fill out the form above and we'll get back to you within one business day with a detailed estimate.</p>
+            <a href="#quote-form" class="engagement__card-link btn btn--outline" data-magnetic>
+              <span class="btn__text">Go to Form</span>
+              <span class="btn__arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="engagement__card">
+            <h3 class="engagement__card-title">Call Us Directly</h3>
+            <p class="engagement__card-text">Speak with a pallet specialist right now. We're available around the clock to answer your questions.</p>
+            <a href="tel:18004451538" class="engagement__card-link btn btn--outline" data-magnetic>
+              <span class="btn__text">1-800-445-1538</span>
+              <span class="btn__arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="engagement__card">
+            <h3 class="engagement__card-title">Email Our Team</h3>
+            <p class="engagement__card-text">Send us your specs, questions, or project details and our team will respond promptly.</p>
+            <a href="mailto:info@sandb.ca" class="engagement__card-link btn btn--outline" data-magnetic>
+              <span class="btn__text">info@sandb.ca</span>
+              <span class="btn__arrow">&rarr;</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__logo">S&B<span class="footer__logo-dot">.</span></span>
+          <p class="footer__tagline">Built Stronger. Delivered Faster.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-heading">Company</h4>
+            <ul class="footer__nav-list">
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/products.html">Products</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-heading">Products</h4>
+            <ul class="footer__nav-list">
+              <li><a href="/products.html">New Pallets</a></li>
+              <li><a href="/products.html">Custom Pallets</a></li>
+              <li><a href="/products.html">Recycled Pallets</a></li>
+              <li><a href="/products.html">Heat-Treated</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-heading">Contact</h4>
+            <ul class="footer__nav-list">
+              <li><a href="tel:18004451538">1-800-445-1538</a></li>
+              <li><a href="tel:4166150959">(416) 615-0959</a></li>
+              <li><a href="mailto:info@sandb.ca">info@sandb.ca</a></li>
+              <li><a href="mailto:pallets@sandb.ca">pallets@sandb.ca</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 S&B Pallets Ltd. All rights reserved.</p>
+        <div class="footer__legal">
+          <span class="footer__address">1300 Ellesmere Road, Scarborough, ON., M1P 2X9, Canada</span>
+        </div>
+        <button class="footer__back-top" data-magnetic aria-label="Back to top">&#8593; Top</button>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/contact.js"></script>
+</body>
+</html>
