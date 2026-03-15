@@ -203,86 +203,106 @@
       </div>
     </section>
 
-    <!-- STATS — Full-width band -->
-    <section class="stats-band" aria-label="Company statistics">
-      <div class="stats-band__inner container">
-        <div class="stats-band__item" data-reveal="up">
-          <span class="stats-band__number" data-counter="30">0</span><span class="stats-band__unit">+</span>
-          <p class="stats-band__label">Years in Business</p>
+    <!-- NUMBERS -->
+    <section class="numbers" id="numbers" aria-labelledby="numbers-title">
+      <div class="numbers__inner container">
+        <div class="numbers__header">
+          <p class="section-label" data-split>The Numbers</p>
+          <h2 class="section-title" id="numbers-title" data-split>Scale you can count on</h2>
         </div>
-        <div class="stats-band__item" data-reveal="up">
-          <span class="stats-band__number stats-band__number--text">24/7</span>
-          <p class="stats-band__label">Service Availability</p>
-        </div>
-        <div class="stats-band__item" data-reveal="up">
-          <span class="stats-band__number stats-band__number--text">Same Day</span>
-          <p class="stats-band__label">Delivery Guarantee</p>
-        </div>
-        <div class="stats-band__item" data-reveal="up">
-          <span class="stats-band__number stats-band__number--text">ISPM-15</span>
-          <p class="stats-band__label">Export Certified</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY US — Problem-first storytelling -->
-    <section class="why-us" id="why-us" aria-labelledby="why-us-title">
-      <div class="why-us__inner container">
-        <div class="why-us__header">
-          <p class="section-label" data-split>Why S&B</p>
-          <h2 class="section-title" id="why-us-title" data-split>Your supply chain deserves better</h2>
-        </div>
-        <div class="why-us__grid">
-          <div class="why-us__feature" data-reveal="up">
-            <span class="why-us__number">01</span>
-            <h3 class="why-us__feature-title">Same-Day Manufacturing</h3>
-            <p class="why-us__feature-text">Order before noon. Delivered by end of day. No minimums, no delays, no excuses.</p>
+        <div class="numbers__grid">
+          <div class="numbers__item" data-reveal="up">
+            <div class="numbers__big">
+              <span data-counter="30">0</span><span class="numbers__suffix">+</span>
+            </div>
+            <div class="numbers__detail">
+              <h3 class="numbers__item-title">Years in Business</h3>
+              <p class="numbers__item-text">Established in the late 1990s. Three decades of manufacturing excellence in the GTA.</p>
+            </div>
           </div>
-          <div class="why-us__feature" data-reveal="up">
-            <span class="why-us__number">02</span>
-            <h3 class="why-us__feature-title">Our Own Fleet</h3>
-            <p class="why-us__feature-text">S&B Transport delivers direct to your dock. Full control from factory floor to loading bay.</p>
+          <div class="numbers__item" data-reveal="up">
+            <div class="numbers__big">24/7</div>
+            <div class="numbers__detail">
+              <h3 class="numbers__item-title">Always On</h3>
+              <p class="numbers__item-text">We never close. Call us anytime — day, night, or holiday. Your production doesn't stop and neither do we.</p>
+            </div>
           </div>
-          <div class="why-us__feature" data-reveal="up">
-            <span class="why-us__number">03</span>
-            <h3 class="why-us__feature-title">Computer-Aided Design</h3>
-            <p class="why-us__feature-text">Our Pallet Design System (PDS) engineers the optimal solution for your exact load requirements.</p>
+          <div class="numbers__item" data-reveal="up">
+            <div class="numbers__big">Same Day</div>
+            <div class="numbers__detail">
+              <h3 class="numbers__item-title">Delivery Guarantee</h3>
+              <p class="numbers__item-text">Order before noon and we'll have it at your dock by end of day. Our own fleet — S&B Transport — handles every delivery.</p>
+            </div>
           </div>
-          <div class="why-us__feature" data-reveal="up">
-            <span class="why-us__number">04</span>
-            <h3 class="why-us__feature-title">Always Available</h3>
-            <p class="why-us__feature-text">24/7 service, 365 days a year. Call us anytime — day, night, or holiday.</p>
+          <div class="numbers__item" data-reveal="up">
+            <div class="numbers__big">ISPM-15</div>
+            <div class="numbers__detail">
+              <h3 class="numbers__item-title">Export Certified</h3>
+              <p class="numbers__item-text">Full international compliance. Ship your products anywhere in the world with confidence.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT PREVIEW -->
-    <section class="about-preview" id="about-preview" aria-labelledby="about-preview-title">
-      <div class="about-preview__inner container">
-        <div class="about-preview__layout">
-          <div class="about-preview__content">
-            <p class="section-label" data-split>Our Story</p>
-            <h2 class="section-title" id="about-preview-title" data-split>Three decades of building better</h2>
-            <p class="about-preview__text" data-reveal="up">S&B Pallets Ltd. is one of the largest manufacturers in the GTA for soft and hardwood pallets. Founded in the late 1990s, we've grown from a small operation to Toronto's most trusted pallet partner — with our own transport fleet, 24/7 service, and ISPM-15 certification.</p>
-            <a href="about.html" class="btn btn--outline" data-magnetic data-reveal="up">
+    <!-- SERVICES — Alternating feature blocks -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="features__inner container">
+        <div class="features__header">
+          <p class="section-label" data-split>What Sets Us Apart</p>
+          <h2 class="section-title" id="features-title" data-split>End-to-end pallet solutions</h2>
+        </div>
+        <div class="features__list">
+          <article class="features__row" data-reveal="up">
+            <div class="features__row-num">01</div>
+            <div class="features__row-content">
+              <h3 class="features__row-title">Computer-Aided Pallet Design</h3>
+              <p class="features__row-text">Our proprietary Pallet Design System (PDS) engineers the optimal solution for your exact load requirements — structural analysis, performance comparisons, and complete specification guidance.</p>
+            </div>
+          </article>
+          <article class="features__row" data-reveal="up">
+            <div class="features__row-num">02</div>
+            <div class="features__row-content">
+              <h3 class="features__row-title">Own Manufacturing &amp; Fleet</h3>
+              <p class="features__row-text">From raw lumber to finished product to your loading dock — we control the entire chain. No middlemen, no delays, no finger-pointing.</p>
+            </div>
+          </article>
+          <article class="features__row" data-reveal="up">
+            <div class="features__row-num">03</div>
+            <div class="features__row-content">
+              <h3 class="features__row-title">Just-in-Time Delivery</h3>
+              <p class="features__row-text">JIT scheduling synced to your production line. We track your inventory levels and deliver exactly when you need it — never overstocked, never short.</p>
+            </div>
+          </article>
+          <article class="features__row" data-reveal="up">
+            <div class="features__row-num">04</div>
+            <div class="features__row-content">
+              <h3 class="features__row-title">Quality at Every Step</h3>
+              <p class="features__row-text">Every single pallet is production-checked. ISPM-15 certified. CWPCA and NWPCA member. We don't cut corners — we cut lumber.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PREVIEW — Pull quote style -->
+    <section class="story-preview" id="story-preview" aria-labelledby="story-title">
+      <div class="story-preview__inner container">
+        <div class="story-preview__content">
+          <p class="section-label" data-split>Our Story</p>
+          <blockquote class="story-preview__quote" data-reveal="up">
+            <p>&ldquo;We started with one simple belief: if you build a better pallet, the business will come. Three decades later, we're the largest manufacturer in the GTA.&rdquo;</p>
+          </blockquote>
+          <div class="story-preview__meta" data-reveal="up">
+            <div class="story-preview__certs">
+              <span class="story-preview__cert">ISPM-15 Certified</span>
+              <span class="story-preview__cert">CWPCA Member</span>
+              <span class="story-preview__cert">NWPCA Member</span>
+            </div>
+            <a href="about.html" class="btn btn--outline" data-magnetic>
               <span class="btn__text">Our Full Story</span>
               <span class="btn__arrow">&rarr;</span>
             </a>
-          </div>
-          <div class="about-preview__badges" data-reveal="up">
-            <div class="about-preview__badge">
-              <span class="about-preview__badge-name">ISPM-15</span>
-              <span class="about-preview__badge-desc">Export Certified</span>
-            </div>
-            <div class="about-preview__badge">
-              <span class="about-preview__badge-name">CWPCA</span>
-              <span class="about-preview__badge-desc">Member Since 1990s</span>
-            </div>
-            <div class="about-preview__badge">
-              <span class="about-preview__badge-name">NWPCA</span>
-              <span class="about-preview__badge-desc">National Member</span>
-            </div>
           </div>
         </div>
       </div>

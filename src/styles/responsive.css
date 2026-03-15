@@ -145,6 +145,25 @@
   .stats-band__inner {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .numbers__item {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .features__row {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .features__row-num {
+    font-size: var(--text-xl);
+  }
+
+  .story-preview__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* ========================================

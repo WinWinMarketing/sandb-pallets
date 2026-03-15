@@ -63,12 +63,13 @@
 .btn--ghost {
   background: transparent;
   color: var(--color-text);
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 .btn--ghost:hover {
   border-color: var(--color-accent-primary);
   color: var(--color-accent-primary);
+  background: var(--color-accent-surface);
 }
 
 /* Outline */
@@ -162,4 +163,33 @@
 [data-card-glow] > * {
   position: relative;
   z-index: 1;
+}
+
+/* ========================================
+   Card Shadows (light theme)
+   ======================================== */
+
+.product-card,
+.service-card,
+.value-card,
+.blog-card,
+.cta-card,
+.about-cta__card,
+.about-values__card,
+.about-certs__card,
+.about-preview__badge,
+.engagement-card,
+.engagement__card,
+.product-detail-card,
+.showcase__card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+.product-card:hover,
+.blog-card:hover,
+.cta-card:hover,
+.about-cta__card:hover,
+.showcase__card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
 }

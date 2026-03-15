@@ -2,7 +2,7 @@
   /* Colors - Sawmill Gold */
   --color-bg: #FAFAF7;
   --color-bg-elevated: #FFFFFF;
-  --color-bg-warm: #F3F0EA;
+  --color-bg-warm: #EDE9E1;
   --color-accent-primary: #B8860B;
   --color-accent-secondary: #8B6914;
   --color-accent-hover: #D4A039;
@@ -13,7 +13,7 @@
   --color-text: #1A1A1A;
   --color-text-muted: #6B6B6B;
   --color-text-dim: #9E9E9E;
-  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border: rgba(0, 0, 0, 0.1);
 
   /* Typography */
   --font-heading: 'Space Grotesk', system-ui, sans-serif;
